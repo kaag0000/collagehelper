@@ -1,4 +1,4 @@
-package com.example.collegehelper;
+package com.kaag.collegehelper;
 
 import org.junit.Test;
 

@@ -1,7 +1,9 @@
-package com.example.collegehelper;
+package com.kaag.collegehelper.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.kaag.collegehelper.R;
 
 public class SplashScreen extends AppCompatActivity {
 

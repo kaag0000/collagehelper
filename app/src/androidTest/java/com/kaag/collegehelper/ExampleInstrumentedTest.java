@@ -1,4 +1,4 @@
-package com.example.collegehelper;
+package com.kaag.collegehelper;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
