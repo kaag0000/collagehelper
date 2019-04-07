@@ -7,16 +7,17 @@ public class UserTypeEnumFormatter implements IFormtter<String> {
     @Override
     public UserTypeEnum getFormattedData(String data) {
 
-        switch(data.trim()){
+        switch (data.trim()) {
             case "UNKNOWN":
                 return UserTypeEnum.UNKNOWN;
-            case "STUDENT" :
+            case "STUDENT":
                 return UserTypeEnum.STUDENT;
             case "CLASS_REPRESENTATIV":
                 return UserTypeEnum.CLASS_REPRESENTATIV;
             case "TEACHER":
                 return UserTypeEnum.TEACHER;
-            default: return UserTypeEnum.UNKNOWN;
+            default:
+                return UserTypeEnum.UNKNOWN;
         }
     }
 }

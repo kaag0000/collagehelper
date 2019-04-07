@@ -38,7 +38,7 @@ public class ApiCaller extends AsyncTask<ArrayList, String, JSONObject> {
             Log.e("ApiCaller", "No parameters");
             return null;
         }
-        for (Map.Entry data : map.entrySet()){
+        for (Map.Entry data : map.entrySet()) {
             params.add(new BasicNameValuePair(data.getKey().toString(), data.getValue().toString()));
         }
         Callable callable = new Callable() {
@@ -59,8 +59,8 @@ public class ApiCaller extends AsyncTask<ArrayList, String, JSONObject> {
     @Override
     protected JSONObject doInBackground(ArrayList... arrayLists) {
 
-        ArrayList data=arrayLists[0];
-        JSONObject json = jsonParser.makeHttpRequest(URL,METHOD, data);
+        ArrayList data = arrayLists[0];
+        JSONObject json = jsonParser.makeHttpRequest(URL, METHOD, data);
         return json;
 
     }
@@ -71,7 +71,7 @@ public class ApiCaller extends AsyncTask<ArrayList, String, JSONObject> {
     }
 
     protected void onPostExecute(JSONObject result) {
-        callResult=result;
+        callResult = result;
     }
 
 

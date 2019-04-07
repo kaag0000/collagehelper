@@ -38,24 +38,24 @@ public class JSONParser {
 
         try {
 
-            if(method.equals("POST")){
+            if (method.equals("POST")) {
                 HttpClient httpClient = new DefaultHttpClient();
                 HttpPost httpPost = new HttpPost(url);
                 httpPost.setEntity(new UrlEncodedFormEntity(params));
                 try {
-                    Log.e("KaagAPI", " " +convertStreamToString(httpPost.getEntity().getContent()));
-                    Log.e("KaagAPI",httpPost.getURI().toString());
+                    Log.e("KaagAPI", " " + convertStreamToString(httpPost.getEntity().getContent()));
+                    Log.e("KaagAPI", httpPost.getURI().toString());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
 
                 HttpResponse httpResponse = httpClient.execute(httpPost);
-                Log.e("KaagAPI",""+httpResponse.getStatusLine().getStatusCode());
-                error= String.valueOf(httpResponse.getStatusLine().getStatusCode());
+                Log.e("KaagAPI", "" + httpResponse.getStatusLine().getStatusCode());
+                error = String.valueOf(httpResponse.getStatusLine().getStatusCode());
                 HttpEntity httpEntity = httpResponse.getEntity();
                 is = httpEntity.getContent();
 
-            }else if(method.equals("GET")){
+            } else if (method.equals("GET")) {
                 DefaultHttpClient httpClient = new DefaultHttpClient();
                 String paramString = URLEncodedUtils.format(params, "utf-8");
                 url += "?" + paramString;
@@ -84,14 +84,14 @@ public class JSONParser {
             }
             is.close();
             json = sb.toString();
-            Log.d("KaagAPI",json);
+            Log.d("KaagAPI", json);
         } catch (Exception e) {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
 
         try {
             jObj = new JSONObject(json);
-            jObj.put("error_code",error);
+            jObj.put("error_code", error);
         } catch (JSONException e) {
             Log.e("JSON Parser", "Error parsing data " + e.toString());
         }
