@@ -1,9 +1,9 @@
 package com.kaag.collegehelper.Formatters;
 
 import com.kaag.collegehelper.Enums.UserTypeEnum;
-import com.kaag.collegehelper.Interfaces.IFormtter;
+import com.kaag.collegehelper.Interfaces.IFormatter;
 
-public class UserTypeEnumFormatter implements IFormtter<String> {
+public class UserTypeEnumFormatter implements IFormatter<String> {
     @Override
     public UserTypeEnum getFormattedData(String data) {
 
