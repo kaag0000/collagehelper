@@ -1,4 +1,4 @@
-package com.prod.prodProject.HTTPCLient;
+package com.kaag.collegehelper.HTTPCLient;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -6,8 +6,10 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.v4.util.ArrayMap;
+import android.util.ArrayMap;
 import android.util.Log;
+
+import org.json.JSONException;
 
 public class OptimusHTTP {
 
@@ -28,7 +30,7 @@ public class OptimusHTTP {
          *
          * @param msg the msg
          */
-        void onSuccess(String msg);
+        void onSuccess(String msg) throws JSONException;
     }
 
     /**
@@ -243,6 +245,7 @@ public class OptimusHTTP {
      */
     public HttpReq makeRequest(String url, ArrayMap<String, Object> params,
                                ResponseListener listener) {
+        Log.e("URL",url);
         HttpReq req = new HttpReq(connectTimeout, readTimeout, contentType, headerMap);
         HttpReqPkg pkg = new HttpReqPkg();
         if (method == METHOD_GET) {

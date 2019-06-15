@@ -1,30 +1,7 @@
 package com.kaag.collegehelper.CommonClasses;
 
-import android.os.Handler;
-import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.v4.util.ArrayMap;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
-
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-
 public class ApiCallerService {
-    private static final String LOG_TAG = "ApiCallerService";
+   /* private static final String LOG_TAG = "ApiCallerService";
     public static String defaultBaseUrl = "";
     private static final Object lockObject = new Object();
     private static ApiCallerService apiCallerService;
@@ -238,5 +215,5 @@ public class ApiCallerService {
             }
         }
         return builder.build();
-    }
+    }*/
 }

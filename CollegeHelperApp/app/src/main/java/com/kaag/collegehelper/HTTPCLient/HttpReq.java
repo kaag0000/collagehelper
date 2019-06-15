@@ -1,9 +1,11 @@
-package com.prod.prodProject.HTTPCLient;
+package com.kaag.collegehelper.HTTPCLient;
 
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.v4.util.ArrayMap;
+import android.util.ArrayMap;
 import android.util.Base64;
+
+import org.json.JSONException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -172,7 +174,11 @@ public class HttpReq extends AsyncTask<HttpReqPkg, String, String> {
     protected void onPostExecute(String result) {
 
         if (listener != null && result != null) {
-            listener.onSuccess(result);
+            try {
+                listener.onSuccess(result);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 

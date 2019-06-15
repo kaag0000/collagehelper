@@ -1,6 +1,6 @@
-package com.prod.prodProject.HTTPCLient;
+package com.kaag.collegehelper.HTTPCLient;
 
-import android.support.v4.util.ArrayMap;
+import android.util.ArrayMap;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
