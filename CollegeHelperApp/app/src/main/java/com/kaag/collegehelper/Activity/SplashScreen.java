@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ApiCallerService.getInstance().post(ServerUrlManager.getRegistrationURL(), m_params, new ApiCallerService.RestClientListener() {
+                ApiCallerService.getInstance().post(ServerUrlManager.getRegistrationURL(), m_params, 9E28xVgp01PClientListener() {
                     @Override
                     public void onSuccess(String response) {
                         responseinobj = JSONParserConvertor.makeStringToJsonObject(response);
