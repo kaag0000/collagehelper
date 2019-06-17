@@ -30,8 +30,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kaag/collegehelper/Activity/SplashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="90">
               <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="e#927#1916#0" expanded="true" />
+                <element signature="e#1791#1792#0" expanded="true" />
+                <element signature="e#1871#1872#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +63,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/kaag/collegehelper/Activity/RegisrationPage.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="101" />
+    <option name="y" value="80" />
+    <option name="width" value="1221" />
+    <option name="height" value="664" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -98,13 +110,6 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="collegehelper" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="Activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CollegeHelperApp" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="collegehelper" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="HTTPCLient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CollegeHelperApp" type="1abcf292:AndroidViewProjectNode" />
@@ -235,5 +240,20 @@
       <window_info anchor="right" id="Assistant" order="5" weight="0.20161943" />
       <window_info anchor="right" id="Preview" order="6" weight="0.20728745" />
     </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/kaag/collegehelper/Activity/SplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#927#1916#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1871#1872#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
