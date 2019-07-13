@@ -7,20 +7,36 @@
     android:orientation="vertical"
     tools:context="com.kaag.collegehelper.Activity.LoginScreen">
 
-    <EditText
+   <!-- <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="EMAIL"/>
+-->
+
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="rollno"/>
+
 
     <EditText
         android:id="@+id/pass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"/>
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LOGIN"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/REGISTRATION"
+        android:hint="REGISTRATION"/>
 
 
 </LinearLayout>

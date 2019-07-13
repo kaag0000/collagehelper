@@ -1,5 +1,6 @@
 package com.kaag.collegehelper.Activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.ArrayMap;
@@ -20,16 +21,23 @@ import org.json.JSONObject;
 
 public class LoginScreen extends AppCompatActivity {
 
-    private EditText email;
+    //private EditText email;
+    private EditText rollno;
     private EditText pass;
     private Button btn;
     ArrayMap<String, Object> m_params;
+
+    public void OpenReg(){
+        Intent intent = new Intent(this, Regstration_Screen.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
-        email = (EditText) findViewById(R.id.email);
+      //  email = (EditText) findViewById(R.id.email);
+        rollno=(EditText) findViewById(R.id.rollno);
         pass = (EditText) findViewById(R.id.pass);
         btn = (Button) findViewById(R.id.btn);
         m_params = new ArrayMap<String, Object>();
@@ -37,7 +45,8 @@ public class LoginScreen extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                m_params.put("rollno", email.getText());
+             //   m_params.put("rollno", email.getText());
+                m_params.put("rollno",rollno.getText());
                 m_params.put("pass", pass.getText());
                 OptimusHTTP optimus = new OptimusHTTP(getApplicationContext());
                 optimus.setMethod(OptimusHTTP.METHOD_POST);
@@ -59,6 +68,19 @@ public class LoginScreen extends AppCompatActivity {
                         }
                     }
                 });
+            }
+        });
+
+
+
+
+
+        Button btn = (Button)findViewById(R.id.REGISTRATION);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenReg();
             }
         });
 
